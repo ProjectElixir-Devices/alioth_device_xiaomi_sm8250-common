@@ -598,7 +598,9 @@ PRODUCT_PACKAGES += \
     vendor.qti.hardware.wifi.supplicant@2.1.vendor \
     WifiResCommon \
     wpa_supplicant \
-    wpa_supplicant.conf
+    wpa_supplicant.conf \
+    TargetWifiOverlay
+
 
 PRODUCT_COPY_FILES += \
     $(LOCAL_PATH)/wifi/WCNSS_qcom_cfg.ini:$(TARGET_COPY_OUT_VENDOR)/etc/wifi/WCNSS_qcom_cfg.ini \
