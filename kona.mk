@@ -429,7 +429,22 @@ PRODUCT_ENFORCE_RRO_EXCLUDED_OVERLAYS += $(LOCAL_PATH)/overlay/packages/apps/Car
 # Partitions
 PRODUCT_USE_DYNAMIC_PARTITIONS := true
 
-# Power
+# Perf
+PRODUCT_PACKAGES += \
+    android.hardware.thermal@2.0 \
+    vendor.qti.hardware.perf@2.2 \
+    vendor.qti.hardware.perf@2.2.vendor \
+    vendor.qti.hardware.perf@2.3 \
+    libpsi.vendor \
+    libtflite \
+    vendor.qti.hardware.servicetracker@1.2.vendor
+
+# Perf Boot Jars
+PRODUCT_BOOT_JARS += \
+    QPerformance \
+    QXPerformance \
+    UxPerformance
+
 PRODUCT_COPY_FILES += \
     $(LOCAL_PATH)/configs/msm_irqbalance.conf:$(TARGET_COPY_OUT_VENDOR)/etc/msm_irqbalance.conf
 
