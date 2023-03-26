@@ -151,6 +151,9 @@ vendor.qcom.bluetooth.soc=hastings
 vendor.hw.fm.init=0
 persist.bluetooth.sbc_hd_higher_bitrate=1
 
+# Camera
+persist.vendor.camera.logInfoMask=false
+
 # Chipset
 ro.soc.manufacturer=Qualcomm
 ro.soc.model=SM8250
